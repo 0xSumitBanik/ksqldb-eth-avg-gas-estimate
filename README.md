@@ -1,13 +1,13 @@
-### Data Streaming the average ETH Gas Estimate using KSQLDB
+## Data Streaming the average ETH Gas Estimate using KSQLDB
 
 This repository contains a KSQLDB setup connection that streams the average ETH Gas Estimate using the Ethereum Gas Estimate API as source data.
 
-#### Prerequisites
+### Prerequisites
 
   * [KSQLDB](https://ksqldb.io/quickstart.html) 
   * [Python3](https://www.python.org/downloads/)
 
-#### How to send data stream to ksqldb?
+### How to send data stream to ksqldb?
 
 1. Make sure you have setup the ksqldb on your system using docker-compose [[Ref.]](https://ksqldb.io/quickstart.html) and the ksqldb instance is up and running.
 To verify that, run the command `docker-compose ps`
@@ -55,7 +55,7 @@ ksql> select * from eth_gas_stream emit changes;
 |12                |11                |7                 |10                |8                 |1681.08           |
 ```
 
-#### File Structure
+### File Structure
 
 - [main.py](./main.py) consists of sections like setting the name of the stream, time interval to fetch the gas rate via the API.
 
@@ -63,15 +63,15 @@ ksql> select * from eth_gas_stream emit changes;
 
 - [data.py](./app/data.py) consists of the DataStream class that has appropriate methods to set the client URL and perform ksqldb operations.
 
-#### Contributions
+### Contributions
 
 There are many room for improvements for this repository content, please feel free to contribute.
 
-#### References
+### References
 
 - [gasprice.io API](https://www.gasprice.io/docs/api)
 
-#### Donations
+### Donations
 
 ```text
 BTC: bc1qvl0hfh474kqskjhg9n2junzlsvdlq7mdu53qdx
