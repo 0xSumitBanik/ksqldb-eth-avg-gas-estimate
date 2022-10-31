@@ -1,4 +1,4 @@
-## Data Streaming the average ETH Gas Estimate using KSQLDB
+## Data Stream: Average ETH Gas Estimate
 
 This repository contains a KSQLDB setup connection that streams the average ETH Gas Estimate using the Ethereum Gas Estimate API as source data.
 
